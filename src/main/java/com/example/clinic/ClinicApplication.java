@@ -18,10 +18,9 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
         @PropertySource(value = {"classpath:application.yml"}, ignoreResourceNotFound = true),
         @PropertySource(value = {"classpath:appInfo.properties"}, ignoreResourceNotFound = true),
 })
-public class ClinicApplication extends WebMvcConfigurerAdapter {
+public class ClinicApplication {
     public static void main(String[] args) {
         SpringApplication.run(ClinicApplication.class, args);
-
     }
 
 
